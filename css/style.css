@@ -219,6 +219,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   .header:after {
@@ -234,13 +235,14 @@
   }
   
   .header-logo-menu {
-    margin: 0 auto;
+    
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     position: relative;
     z-index: 3;
-    width: 1200px;
+    width: 72%;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 100px;
@@ -260,16 +262,18 @@
     font-size: 13px;
     font-style: normal;
     color: #fff;
+    margin-right: 7px;
   }
   
   .menu {
     padding-top: 41px;
+    min-width: 40%;
   }
   
   .menu-item {
     list-style-type: none;
     display: flex;
-    gap: 35px;
+    justify-content: space-between;
     text-transform: uppercase;
     text-align: center;
     font-size: 12.5px;
@@ -1222,6 +1226,10 @@
   .menu {
     visibility: hidden;
   }
+
+  .menu-link {
+    font-size: 1px;
+  }
   
   
   .in_trend_title {
@@ -1271,11 +1279,10 @@
   
   .logo {
     padding-top: 225px;
-    
   }
   
   .header-logo-menu {
-    padding-left: 45px;
+    padding-left: 0px;
     margin-bottom: 35px;
   }
   
@@ -1429,6 +1436,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .image-news {
+    width: 330px;
+    height: 290px;
+  }
+
+
 }
 
 @media screen and (min-device-width: 641px) and (max-device-width: 1200px) and (orientation : portrait){
