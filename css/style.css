@@ -242,7 +242,8 @@
     justify-content: space-between;
     position: relative;
     z-index: 3;
-    width: 72%;
+    max-width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 100px;
@@ -364,6 +365,13 @@
   .h2-trend {
     text-decoration: none;
     color: #ffffff;
+    font-size: 20px;
+    line-height: 10px;
+  }
+
+  .tegs {
+    text-decoration: none;
+    color: #b69f5b;;
     font-size: 20px;
     line-height: 10px;
   }
@@ -925,6 +933,7 @@
     width: 345px;
     min-height: 267px;
     margin-top: -25px;
+    height: 100%;
     padding: 45px 22px 30px 22px;
     font-size: 13px;
     font-family: 'OpenSans-regular', sans-serif;
@@ -1282,7 +1291,7 @@
   }
   
   .header-logo-menu {
-    padding-left: 0px;
+    padding-left: 40px;
     margin-bottom: 35px;
   }
   
