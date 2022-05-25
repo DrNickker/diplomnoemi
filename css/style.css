@@ -871,6 +871,18 @@
     line-height: 15px
 }
 
+.our_products_cards_block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
   .our_products_cards {
     display: flex;
     flex-direction: row;
@@ -1117,6 +1129,7 @@
   min-height: 390px;
 }
 
+
 .main-title {
   line-height: 55px;
   font-size: 40px;
@@ -1140,6 +1153,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .news_one {
@@ -1177,11 +1192,59 @@
   margin-left: 0px;
 }
 
-.our_products_cards {
+.our_products {
+  display: flex;
+  
+  
+  align-self: center;
+  margin: 0;
+}
+
+
+
+
+
+
+/*.our_products_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 0px;
+  justify-content: flex-start;
+  gap: 40px; 
+  align-self: center;
+  margin: 0;
+  align-items: center;
+}*/
+
+.our_products_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;  
+  margin-bottom: 60px;
+  
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; 
+
 }
+
+.our_products_cards_block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 728px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  justify-content: flex-start;
+  gap: 38px; 
+}
+
 
 .our_products_card_one {
   padding-top: 27px;    
@@ -1192,7 +1255,7 @@
 }
 
 .our_products_card_three {
-  padding-top: 27px;    
+  padding-top: 27px;  
 }
 
 .news-main {
@@ -1301,12 +1364,14 @@
     display: flex;
     flex-direction: column;  
   }
+
+
   
   .news_one {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    max-width: 330px;
+    width: 100%;
   }
   
   .news_two {
@@ -1341,43 +1406,59 @@
     margin-top: 15px;
     margin-left: 0px;
   }
+
+  .our_products_cards_block {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
    
   .our_products_card_one {
     padding-top: 27px;    
-    padding-left: 8%;
-    max-width: 330px;
+    width: 95vw;
   }
 
   .our_products_img_one {
-    max-width: 285px;
+    width: 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .our_products_img_two {
-    max-width: 285px;
+    width: 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .our_products_img_three {
-    max-width: 285px;
+    width: 85%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .our_products_border {
-    max-width: 330px;
+    width: 95%;
   }
   
   .our_products_card_two {
+    width: 95vw;
     padding-top: 27px;    
-    padding-left: 4%;
   }
   
   .our_products_card_three {
+    width: 95vw;
     padding-top: 27px;    
-    padding-left: 4%;
   }
   
   .news-main {
-    padding-right: 15px;
     justify-content: space-between;
-    
   }
   
   .burger-menu {
@@ -1390,13 +1471,10 @@
     background-repeat: no-repeat;
   }
 
-  .img-news {
-    max-width: 330px;
-  }
-
   .discription {
-    max-width: 330px;
+    max-width: 100%;
     max-height: 330px;
+    width: auto;
   }
 
   .discription-date-name {
@@ -1414,27 +1492,27 @@
   }
     
   .posts {
-    width: 330px;
+    width: 95vw;
   }
 
   .field-search-group {
-    width: 280px;
+    width: 82vw;
   }
 
   .posts-title {
-    width: 330px;
+    width: 92vw;
   }
 
   .posts-title::after {
-    left: 130px;
+    left: auto;
   }
 
   .field-email-address {
-    width: 330px;
+    width: 95vw;
   }
 
   .button-submit {
-    width: 330px;
+    width: 95vw;
   }
 
   .our_products_title {
@@ -1445,6 +1523,19 @@
     margin-left: 3px;
   }
 
+  .tags-list-container {
+    width: 90vw;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 92vw;
+  }
+
+
   .tags-list {
     display: flex;
     flex-direction: row;
@@ -1452,9 +1543,17 @@
   }
 
   .image-news {
-    width: 330px;
-    height: 290px;
+    width: 100%;
+    height: 100%;
   }
+
+  .img-news {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+
+
 }
 
 
