@@ -491,10 +491,10 @@
     padding-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
   }
   
@@ -939,6 +939,12 @@
     min-height: 205px;
   }
 
+  .our_products_cards_block_first {
+    display: flex;
+    justify-content: flex-start;
+    gap: 68px;
+  }
+
   .our_products_border {
     box-sizing: border-box;
     border: 3px solid #b69f5b;
@@ -1152,10 +1158,35 @@
 .main-area {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  gap: 35px;
 }
+
+.news-main {
+  padding-right: 10px;
+  width: 100%;
+}
+
+
+
+.discription {
+  margin-top: 15px;
+  margin-left: 0px;
+  width: 100%;
+}
+
+.image-news {
+  width: 100%;
+  height: 100%;
+}
+
+.img-news {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
 
 .news_one {
   display: flex;
@@ -1187,18 +1218,19 @@
   margin-bottom: 0px;
 }
 
-.discription {
-  margin-top: 15px;
-  margin-left: 0px;
-}
 
 .our_products {
   display: flex;
-  
-  
   align-self: center;
   margin: 0;
+  width: 100%;
 }
+
+.aside-container {
+  width: 272px;
+  min-height: 1424px;
+}
+
 
 
 
@@ -1226,11 +1258,11 @@
   max-width: 1200px;
   width: 100%;  
   margin-bottom: 60px;
-  
   margin-top: 10px;
   justify-content: center;
   align-items: center;
-  gap: 40px; 
+  margin: 0;
+  gap: 35px; 
 
 }
 
@@ -1238,28 +1270,50 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 728px;
+  width: 100%;
   margin-bottom: 60px;
   margin-top: 10px;
   justify-content: flex-start;
   gap: 38px; 
+  padding-left: 35px;
+  padding-right: 35px;
+  gap: 35px; 
+  justify-content: space-between;
+  
 }
 
 
 .our_products_card_one {
-  padding-top: 27px;    
+  padding-top: 27px;   
+  width: 48%;
 }
 
 .our_products_card_two {
   padding-top: 27px;    
+  width: 48%;
 }
 
 .our_products_card_three {
   padding-top: 27px;  
+  width: 48%;
 }
 
-.news-main {
-  padding-right: 10px;
+.our_products_img_one {
+  width: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our_products_img_two {
+  width: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our_products_img_three {
+  width: 85%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .burger-menu {
@@ -1277,13 +1331,12 @@
 }
 
 .p_news::after {
-  content: " ________________________ ";
+  content: " _________________________ ";
     font-size: 35px;
     color: #c5c5c3;
     opacity: 1;
     
     top: 15px;
-    left: 46v;
     line-height: 15px
 }
 
@@ -1291,7 +1344,38 @@
   margin-bottom: 30px;
 }
 
+.our_products_border {
+  width: 100%;
 }
+
+.our_products_cards_block_first {
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+.our_products_cards_block_second {
+  display: flex;
+  justify-content: flex-start;
+  gap: 35px;
+  width: 100%;
+}
+}
+
+
+
+@media (max-width: 803px) and (min-width: 641px) {
+
+  .main-container {
+    width: 50%;
+  }
+
+  .p_news::after {
+    display: none;
+  }
+}
+
+
 
 @media (max-width: 640px) {
 
@@ -1363,10 +1447,10 @@
   .main-area {
     display: flex;
     flex-direction: column;  
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-
-  
   .news_one {
     display: flex;
     flex-direction: column;
@@ -1417,12 +1501,24 @@
     align-items: center;
   }
 
-
-
+  .our_products_cards_block_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  
+  .our_products_cards_block_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+  }
    
   .our_products_card_one {
     padding-top: 27px;    
-    width: 95vw;
+    width: 100%;
   }
 
   .our_products_img_one {
@@ -1448,12 +1544,12 @@
   }
   
   .our_products_card_two {
-    width: 95vw;
+    width: 100%;
     padding-top: 27px;    
   }
   
   .our_products_card_three {
-    width: 95vw;
+    width: 100%;
     padding-top: 27px;    
   }
   
@@ -1482,17 +1578,17 @@
   }
   
   .p_news::after {
-    content: " _____________________ ";
+    content: " __________________ ";
       font-size: 35px;
       color: #c5c5c3;
       opacity: 1;
       top: 15px;
-      left: 46v;
       line-height: 15px
   }
     
   .posts {
-    width: 95vw;
+    /*width: 95vw;*/
+    margin-top: 50px;
   }
 
   .field-search-group {
